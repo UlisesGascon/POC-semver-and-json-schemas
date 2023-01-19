@@ -1,7 +1,7 @@
 {
   "name": "poc-semver-and-json-schemas",
   "version": "1.0.0",
-  "description": "POC to show the potential of mixing json schemas and Semver for IOT or Bus driven architectures",
+  "description": "Discover the Power of JSON Schemas and Semantic Versioning: Unveiling the Potential of IoT and Business-Driven Architectures",
   "main": "src/index.js",
   "private": true,
   "scripts": {
