@@ -1,0 +1,28 @@
+{
+  "name": "poc-semver-and-json-schemas",
+  "version": "1.0.0",
+  "description": "Discover the Power of JSON Schemas and Semantic Versioning: Unveiling the Potential of IoT and Business-Driven Architectures",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "cross-env NODE_ENV=test && jest --detectOpenHandles --forceExit  --verbose",
+    "test:watch": "cross-env NODE_ENV=test && jest --detectOpenHandles --forceExit --verbose --watchAll"
+  },
+  "author": "Ulises Gascón",
+  "license": "MIT",
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "devDependencies": {
+    "ajv": "8.12.0",
+    "ajv-formats": "2.1.1",
+    "cross-env": "7.0.3",
+    "jest": "29.3.1",
+    "semver": "7.3.8",
+    "standard": "17.0.0"
+  }
+}

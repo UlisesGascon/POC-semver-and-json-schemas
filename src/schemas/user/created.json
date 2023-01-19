@@ -1,0 +1,46 @@
+{
+    "version": "1.0.0",
+    "schemaCompatibility": "1.x",
+    "name": "userCreated",
+    "schema": {
+      "title": "userCreated",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique Id for the user",
+          "type": "string",
+          "format": "uuid"
+        },
+        "age": {
+          "description": "User age",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 120
+        },
+        "email": {
+          "description": "User email",
+          "type": "string",
+          "format": "email"
+        },
+        "schemaVersion": {
+          "description": "Metadata field to determine the json schema version used in the message",
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 14,
+          "pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$"
+        },
+        "timestamp": {
+          "description": "Metadata field to determine the date of the message",
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "email",
+        "schemaVersion",
+        "timestamp"
+      ]
+    }
+  }

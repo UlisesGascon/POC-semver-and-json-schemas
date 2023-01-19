@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`All Schema files validation Should export a valid library to be consumed by other projects 1`] = `
+{
+  "user": {
+    "created": {
+      "name": "userCreated",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "age": {
+            "description": "User age",
+            "maximum": 120,
+            "minimum": 0,
+            "type": "integer",
+          },
+          "email": {
+            "description": "User email",
+            "format": "email",
+            "type": "string",
+          },
+          "id": {
+            "description": "Unique Id for the user",
+            "format": "uuid",
+            "type": "string",
+          },
+          "schemaVersion": {
+            "description": "Metadata field to determine the json schema version used in the message",
+            "maxLength": 14,
+            "minLength": 5,
+            "pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$",
+            "type": "string",
+          },
+          "timestamp": {
+            "description": "Metadata field to determine the date of the message",
+            "minimum": 0,
+            "type": "integer",
+          },
+        },
+        "required": [
+          "id",
+          "email",
+          "schemaVersion",
+          "timestamp",
+        ],
+        "title": "userCreated",
+        "type": "object",
+      },
+      "schemaCompatibility": "1.x",
+      "version": "1.0.0",
+    },
+    "deleted": {
+      "name": "userDeleted",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "Unique Id for the user",
+            "format": "uuid",
+            "type": "string",
+          },
+          "schemaVersion": {
+            "description": "Metadata field to determine the json schema version used in the message",
+            "maxLength": 14,
+            "minLength": 5,
+            "pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$",
+            "type": "string",
+          },
+          "timestamp": {
+            "description": "Metadata field to determine the date of the message",
+            "minimum": 0,
+            "type": "integer",
+          },
+        },
+        "required": [
+          "id",
+          "schemaVersion",
+          "timestamp",
+        ],
+        "title": "userDeleted",
+        "type": "object",
+      },
+      "schemaCompatibility": "1.x",
+      "version": "1.0.0",
+    },
+  },
+}
+`;
