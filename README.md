@@ -33,11 +33,17 @@ _Image from [The Neighbourhoodie Software GmbH](https://neighbourhood.ie/blog/20
 
 You can quickly and effortlessly fork this repository and transform it into a library. Additionally, you can build your own schemas and extend the tests. This is a great opportunity to take full advantage of the features available and develop something unique and powerful.
 
+### Overview
+
+![](.github/overview.png)
+
+
+
 ### Contract structure with Semver
 
 Here is a [simple model](src/schemas/user/deleted.json)
 
-```
+```json
 {
     "version": "1.0.0",
     "schemaCompatibility": "1.x",
