@@ -1,0 +1,34 @@
+{
+    "version": "1.0.0",
+    "schemaCompatibility": "1.x",
+    "name": "userDeleted",
+    "schema": {
+      "title": "userDeleted",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique Id for the user",
+          "type": "string",
+          "format": "uuid"
+        },
+        "schemaVersion": {
+          "description": "Metadata field to determine the json schema version used in the message",
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 14,
+          "pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$"
+        },
+        "timestamp": {
+          "description": "Metadata field to determine the date of the message",
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "schemaVersion",
+        "timestamp"
+      ]
+    }
+  }
