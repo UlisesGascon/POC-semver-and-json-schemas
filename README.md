@@ -4,9 +4,9 @@
 
 I am proposing a Proof of Concept (POC) to demonstrate the potential of combining JSON Schemas and Semantic Versioning (Semver) for Internet of Things (IoT) and Event-driven architectures. Through this POC, we will be able to demonstrate how these two technologies can be used together to create powerful, versatile, and resilient systems.
 
-## 📺 Video explanation
+## 📺 Tutorial
 
-[10m video in Youtube about this project](https://youtu.be/-C7G41L_uQ8)
+[![promotional banner from youtube](.github/img/banner.png)](https://youtu.be/-C7G41L_uQ8)
 
 ## Intro
 
